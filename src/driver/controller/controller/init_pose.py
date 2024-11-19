@@ -30,7 +30,7 @@ class InitPose(Node):
         self.client.wait_for_service()
 
         with open(
-            "../../../../software/Servo_upper_computer/servo_config.yaml", "r"
+            "/ros2_hiwonder/software/Servo_upper_computer/servo_config.yaml", "r"
         ) as file:
             servo_offsets = yaml.safe_load(file)
 
